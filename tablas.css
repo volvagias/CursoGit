@@ -196,7 +196,7 @@ main
   {
     display: flex;
     
-                                     /* position: fixed!important; mantener tamaño de elementos independientemente del tamaño de la ventana de windows */ 
+                                     /*position: fixed!important; mantener tamaño de elementos independientemente del tamaño de la ventana de windows */ 
     
   }
 }
