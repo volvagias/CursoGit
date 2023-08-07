@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="tablas.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--@media del .css-->
+  </head>
+
+  <body class="body-flex">
+    <main>
+      <div class="margen-exterior">
+        <form action="no se">
+            <table>
+              <h3>Última Internación</h3>
+              <thead>
+                <tr>                         <!-- Filas que contienen celdas -->
+                  <th>Última Internación</th> <!-- Celdas de encabezado -->
+                  <th>Valor</th>
+                  <th>Observación</th>
+                  <th>Eliminar</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+                  <tr>                         
+                    <td>FECHA</td>             <!-- Celdas -->
+                    <td><input class="calendario-movile" type="date" name="fecha-esperada"><button type="submit">Enviar datos</button></td> <!-- Calendario interactivo-->
+                    <td class="espaciado-lapiz"><a href="#popup"><img src="pencil-square.svg" alt="escribir"> Escribir</a></td>         <!-- referencia a popup Fecha -->
+                    <td class="espaciado-cruz"><a id="#eliminar" href="#"><img src="x-circle-fill.svg" alt="icono-borrar"></a></td>
+                  </tr>
+                  
+                  
+                  <tr>
+                    <td>MOTIVO</td>
+                    <td><input class="calendario-movile" type="date" name="fecha-esperada"><button type="submit">Enviar datos</button></td>
+                    <td class="espaciado-lapiz"><a href="#popup-2"><img src="pencil-square.svg" alt="escribir"> Escribir</a></td>         <!-- referencia a popup Motivo -->
+                    <td class="espaciado-cruz"><a id="#eliminar" href="#"><img src="x-circle-fill.svg" alt="icono-borrar"></a></td>
+                  </tr>
+
+                  <!-- ============================================================================================ -->
+
+                <div id="popup" class="ventana-emergente">               <!-- Popup de "Fecha" -->
+                  <div id="popupEstilo">
+                      <h2>Observación</h2>
+                      <a id="cerrar" href="#">Cerrar</a>                <!-- Cruz de cerrar -->
+                      <div>
+                          <textarea name="texto-popup" class="input-solo-texto"></textarea>
+                      </div>
+                  </div>
+                </div>
+
+                <div id="popup-2" class="ventana-emergente">               <!-- Popup de "Motivo" -->
+                  <div id="popupEstilo">
+                      <h2>Observación</h2>
+                      <a id="cerrar" href="#">Cerrar</a>                <!-- Cruz de cerrar -->
+                      <div>
+                          <textarea name="texto-popup" class="input-solo-texto"></textarea>
+                      </div>
+                  </div>
+                </div>
+
+                
+              </tbody>
+            </table>
+            
+        </form>
+      </div>
+    </main>
+  </body>
+
+  
+
+
+</html>
