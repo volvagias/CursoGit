@@ -1,0 +1,241 @@
+/* DESKTOP */
+
+.ventana-emergente
+{ 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+.ventana-emergente:target
+  {
+    visibility: visible;
+    opacity: 1;
+  }
+
+#popupEstilo
+  {
+    width: 50%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    margin: 20% auto;
+    transition: all 0.5s ease-in-out;
+  }
+
+#cerrar
+  {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #F00;
+    transition: all 200ms;
+  }
+
+.input-solo-texto
+  {
+     width: 100%;                    /* al tener % toma el ancho del elemento padre */
+     height: 200px;
+     border-radius: 1%;
+  }
+
+table                                /* Espaciado de tabla */
+{
+  width: 100%;
+
+  text-align: left;
+
+  border-spacing: 0px;
+
+  padding: 16px 37px 16px 16px;
+}
+
+th                               /* Espaciado de celdas */
+{
+  
+  border-bottom: 1px solid rgb(65,65,65);
+
+  padding-left: 30px;
+
+  height: 50px;
+
+}
+
+th:first-child                     /* redondeo los bordes de los th */
+{
+  border-top-left-radius: 10px;
+}
+
+th:last-child 
+{
+  border-top-right-radius: 10px;
+}
+
+thead tr
+{
+  background: rgb(224,224,224);
+  padding: 20px;
+  color: #414141;
+  font-size: 1em;
+  
+}
+
+
+td
+{
+  width: 25%;
+
+  border-spacing: 0;
+
+  height: 50px;
+
+  color: #414141;
+
+  text-align: left;
+
+  padding-left: 10px;
+
+  font-size: 0.8em;
+
+}
+
+table tbody tr:nth-child(even)  /* even = es para pares / odd = impares */
+                                /* nth-child() ==> Representa elementos en una serie de hermanos. */
+{                               /* alternar colores entre filas */
+	background: rgb(233, 233, 233);  
+          
+}
+
+table tbody tr:nth-child(odd)
+{
+  
+  background: #f5f5f5; 
+}
+
+button
+{
+  margin: 12px;
+}
+
+h3
+{
+  color: #33353a;
+  font-family: Roboto,sans-serif;
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+body
+{
+  width: 90%;
+  background-color: rgb(241, 241, 241);
+  margin: 16px;
+  padding: 25px;
+  display: inline-block;                        /* mantener margen derecho al achicar ventana */
+}
+
+.margen-exterior
+{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 16px 16px 0px 16px;
+  font-family: Roboto,sans-serif;
+  width: 100%;
+}
+
+.espaciado-cruz
+{
+  padding-left: 58px !important;
+}
+
+.espaciado-lapiz
+{
+  padding-left: 50px !important;
+}
+
+a
+{
+  text-decoration: none;
+  color: #F00;
+}
+
+button 
+{
+  background-color: rgb(75, 75, 75);
+  color: white;
+  border-radius: 20px;
+  height: 50px;
+  width: 100px;
+  border: none;                            /* quitar borde al boton */
+}
+
+button:hover 
+{
+  background-color: rgb(202, 0, 0);
+  cursor: pointer;
+}
+
+main
+{
+  overflow: auto;
+}
+
+
+@media (max-width: 250px)
+{
+  .body-flex
+  {
+    display: flex;
+    
+                                     /* position: fixed!important; mantener tamaño de elementos independientemente del tamaño de la ventana de windows */ 
+    
+  }
+}
+
+
+@media (max-width: 500px)
+{
+  #popupEstilo
+  {
+    width: 85%;
+  }
+  h2 
+  {
+    font-size: 1em;
+  }
+  #cerrar
+  {
+    font-size: 1em;
+    right: 10px;
+  }
+  textarea
+  {
+    max-width:97%!important;
+  }
+}
+
+@media (max-width: 1100px) 
+{
+  .calendario-movile
+  {
+    margin-top: 4px;
+  }
+}
+
+
+
+
+
+
+
+
+
